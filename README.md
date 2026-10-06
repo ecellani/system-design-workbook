@@ -45,28 +45,3 @@ O repositório está organizado em **10 dimensões arquiteturais essenciais**:
 | **08** | **Concorrência, Throughput & Capacidade** | Multithreading, I/O Não-Bloqueante, Capacity Planning, Teoria das Filas (Little's Law, M/M/1). |
 | **09** | **Resiliência, Falhas & Topologia Celular** | Circuit Breaker, Retries/Backoff/Jitter, Bulkhead Pattern e Arquitetura em Células (Cell-Based). |
 | **10** | **Confiabilidade Operacional & Day-2** | Canary vs. Blue-Green, Testes de Carga/Estresse, Golden Signals, SPOF e Disaster Recovery (RPO/RTO). |
-
----
-
-## 📋 Padrão de Estrutura dos Arquivos
-
-Cada arquivo de checklist dentro deste repositório segue rigorosamente a seguinte estrutura padrão:
-
-```markdown
-# [Bloco XX] - Nome do Domínio Arquitetural
-
-## 1. Checklist de Questionamentos de Entrada (Premissas)
-- [ ] Validações de volumetria, SLAs, RPO/RTO e impacto no negócio.
-
-## 2. Matriz de Trade-offs e Dilemas Técnicos
-### Dilema: Opção A vs. Opção B
-- **O que você GANHA:** ...
-- **O que você PAGA (Custos ocultos & Day-2):** ...
-- **Blast Radius:** ...
-- **Regra Prática:** ...
-
-## 3. Anti-Patterns e Red Flags (Over-Engineering)
-- [ ] Indicadores de que a solução é desproporcional ao problema.
-
-## 4. Checklist de Go-Live e Operação (Day-2)
-- [ ] Golden Signals instrumentados, alarmes e degradação graciosa.
